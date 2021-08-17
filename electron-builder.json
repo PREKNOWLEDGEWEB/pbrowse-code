@@ -6,7 +6,7 @@
     "oneClick": false,
     "perMachine": false,
     "allowToChangeInstallationDirectory": true,
-    "license": "LICENSE", // <- Put your license name here.
+    "license": "LICENSE",
   },
   "generateUpdatesFilesForAllChannels": true,
   "asar": true,
