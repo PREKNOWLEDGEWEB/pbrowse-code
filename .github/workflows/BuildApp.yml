@@ -15,7 +15,7 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      - name: Install Node.js
+      - name: Install Node.js or Init
         uses: actions/setup-node@v1
         with:
           node-version: 14
@@ -32,7 +32,7 @@ jobs:
       - name: Get commit message
         run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
 
-      - name: Build the app
+      - name: Build the app with 3 os
         run: yarn ci-build
         env:
           GH_TOKEN: ${{ secrets.token }}
